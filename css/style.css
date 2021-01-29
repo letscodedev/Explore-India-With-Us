@@ -1,0 +1,169 @@
+@font-face {
+	font-family: 'Product Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Product Sans'), url('../fonts/ProductSans-Regular.woff') format('woff');
+}
+
+html {
+	margin: 0;
+	padding: 0;
+  	scroll-behavior: smooth;
+}
+
+
+*:focus {
+    outline: 0 !important;
+}
+
+a { color: inherit; } 
+
+a:hover 
+{
+     color: #212121; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+body {
+	font-family: "Product Sans";
+	overflow-x: hidden;
+}
+
+.desktop {
+	height: 100vh;
+}
+
+.about, .service {
+	margin-bottom: 3rem;
+}
+
+.header {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.navbar a {
+	padding: 0 2rem;
+	text-decoration: none;
+}
+
+.connect {
+	border-radius: 15px;
+	background-color: #212121;
+	border: 1px solid #212121;
+	padding: 1rem;
+	color: #ffffff;
+}
+
+.img-responsive {
+	width: 100%;
+	height: 100%;
+}
+
+.head-text {
+	font-size: 6rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-weight: bold;
+	padding-bottom: 1rem;
+}
+
+.handles {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.handles i {
+	font-size: 4rem;
+	margin: 0 2rem;
+}
+
+.padding {
+	padding: 2rem 2rem 0 2rem;
+}
+
+.head {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	width: 100%;
+	background-color: #212121;
+	color: #ffffff;
+	padding: 1rem;
+}
+
+.yt {
+	width: 100%;
+	height: 350px;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 576px) {
+	.head {
+		margin: 1rem 0;
+		display: block;
+		justify-content: center;
+		align-items: center;
+	}
+	.head-text {
+		font-size: 5rem;
+		font-weight: bold;
+	}
+	.header {
+		margin-top: 2rem;
+		display: block;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.navbar a {
+		padding: 0 1rem;
+		text-decoration: none;
+		text-align: center;
+	}
+	.desktop {
+		height: auto;
+		margin-bottom: 5rem;
+	}
+	.yt {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+/* width */
+::-webkit-scrollbar {
+  	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  	background: #f1f1f1; 
+  	border-radius: 10px;
+  	margin:3px 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #212121; 
+  	border-radius: 10px;	
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  	background: #555; 
+}
