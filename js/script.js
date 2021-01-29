@@ -1,3 +1,5 @@
-$(document).ready(function(){
-	console.log("Hello World.");
-})
+function launchChatBox() {
+	var box = document.getElementById('launch');
+	console.log(box)
+	box.click()
+}

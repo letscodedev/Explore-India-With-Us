@@ -30,7 +30,7 @@
 						<a href="#">Home</a>
 						<a href="#service">Fun Facts</a>
 						<a href="#about">About</a>
-						<a href="#footer"><button class="connect">Talk with Assistant</button></a>
+						<a><button class="connect" onclick="launchChatBox()">Incredible India</button></a>
 					</div>
 				</div>
 				<div class="head">
@@ -102,6 +102,31 @@
 	    	<img src="assets/footer.png" style="height: 100%; width: 100%; background-repeat: no-repeat;"/>
 	    	<center><span style="color: white; font-weight: 600">Made with &nbsp;<i style="color: red" class="fas fa-heart"></i> &nbsp;|&nbsp; Explore India With Us</span></center>
 	    </div>
+
+	    <!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        ...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    	<df-messenger id="launch" chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;602cfa50-ab83-421d-be04-0e32a9fc0be3_x.png" intent="WELCOME" chat-title="Explore-india-with-us" agent-id="2df179d1-066c-45f1-a1e7-914cff8587d1" language-code="en"></df-messenger>
+
 		<script>
 		  AOS.init();
 		</script>
