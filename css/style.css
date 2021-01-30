@@ -16,13 +16,16 @@ html {
     outline: 0 !important;
 }
 
-a { color: inherit; } 
+a { color: inherit !important; } 
 
-a:hover 
-{
+a:hover {
 	color: #212121; 
 	text-decoration:none; 
 	cursor:pointer;  
+}
+
+a:vistied {
+	color: black;
 }
 
 body {
@@ -32,10 +35,40 @@ body {
 
 .desktop {
 	height: 100vh;
+	width: 100%;
 }
 
-.about, .service {
-	margin-bottom: 3rem;
+.ImageGallery, .IncredibleIndia, .footer {
+	margin-bottom: 5rem;
+	width: 100%;
+}
+
+/*.frame {
+	position: relative;
+}
+
+.frame:before {
+	height: 210px;
+	width: 95%;
+	position:absolute;
+	content: '';
+	left: -3px;
+	top: 15px;
+	border: 10px solid black;
+}*/
+
+.handles i:hover {
+	color: #212121; 
+	text-decoration:none; 
+	cursor:pointer;  
+}
+
+.image {
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	width:100%;
+	height: 200px;
+	object-fit:cover;
+	object-position:50% 50%;
 }
 
 .header {
@@ -94,13 +127,6 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.footer {
-	width: 100%;
-	background-color: #212121;
-	color: #ffffff;
-	padding: 1rem;
 }
 
 .yt {
